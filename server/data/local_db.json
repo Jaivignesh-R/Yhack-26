@@ -1,0 +1,676 @@
+{
+  "departments": [
+    {
+      "id": 1,
+      "name": "State Pollution Control Board",
+      "code": "PCB",
+      "description": "Environmental clearances, emissions, Consent to Establish & Operate.",
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 2,
+      "name": "Department of Industries & Commerce",
+      "code": "DIC",
+      "description": "Industrial setup permits, MSME registration and state incentive schemes.",
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 3,
+      "name": "Fire and Rescue Services Directorate",
+      "code": "FIRE",
+      "description": "Fire safety clearances, building plan approval & fire NOCs.",
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 4,
+      "name": "Food Safety and Standards Authority",
+      "code": "FSSAI",
+      "description": "Food manufacturing, handling, storage, and processing licences.",
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 5,
+      "name": "Department of Labour & Employment",
+      "code": "LABOUR",
+      "description": "Factory licences, worker welfare, standing orders, and shop registration.",
+      "created_at": "2026-09-10T17:03:48.491Z"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Platform SuperAdmin",
+      "email": "admin@gov.in",
+      "phone": "9876543210",
+      "password_hash": "$2a$10$Aa5WgvQaZZ0pnbHKrziqSuYO5DJ15PuLQzUraBJ5H9Ia6yKq8E4Iu",
+      "role": "admin",
+      "department_id": null,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 2,
+      "name": "Officer Rajesh Verma",
+      "email": "officer.pcb@gov.in",
+      "phone": "9876543211",
+      "password_hash": "$2a$10$Aa5WgvQaZZ0pnbHKrziqSuYO5DJ15PuLQzUraBJ5H9Ia6yKq8E4Iu",
+      "role": "officer",
+      "department_id": 1,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 3,
+      "name": "Officer Priya Nair",
+      "email": "officer.fire@gov.in",
+      "phone": "9876543212",
+      "password_hash": "$2a$10$Aa5WgvQaZZ0pnbHKrziqSuYO5DJ15PuLQzUraBJ5H9Ia6yKq8E4Iu",
+      "role": "officer",
+      "department_id": 3,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 4,
+      "name": "Vikram Sharma",
+      "email": "vikram@apexfoods.com",
+      "phone": "9876543213",
+      "password_hash": "$2a$10$Aa5WgvQaZZ0pnbHKrziqSuYO5DJ15PuLQzUraBJ5H9Ia6yKq8E4Iu",
+      "role": "business_user",
+      "department_id": null,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 5,
+      "name": "Kalai",
+      "email": "kalai@123",
+      "phone": "6895741236",
+      "password_hash": "$2a$10$/j2j7Rn49IjE9MQYoDuuk.icnQTdUOy9mAkeA8CInrHxfFMD0Zfx2",
+      "role": "business_user",
+      "department_id": null,
+      "created_at": "2026-09-10T17:20:21.610Z"
+    },
+    {
+      "id": 5,
+      "name": "Officer Anand Kumar (Industries)",
+      "email": "officer.dic@gov.in",
+      "phone": "9876543214",
+      "password_hash": "$2a$10$Aa5WgvQaZZ0pnbHKrziqSuYO5DJ15PuLQzUraBJ5H9Ia6yKq8E4Iu",
+      "role": "officer",
+      "department_id": 2,
+      "created_at": "2026-09-10T17:51:46.267Z"
+    },
+    {
+      "id": 6,
+      "name": "Officer Sunita Rao (Food Safety)",
+      "email": "officer.fssai@gov.in",
+      "phone": "9876543215",
+      "password_hash": "$2a$10$Aa5WgvQaZZ0pnbHKrziqSuYO5DJ15PuLQzUraBJ5H9Ia6yKq8E4Iu",
+      "role": "officer",
+      "department_id": 4,
+      "created_at": "2026-09-10T17:51:46.270Z"
+    },
+    {
+      "id": 7,
+      "name": "Officer Manoj Deshmukh (Labour)",
+      "email": "officer.labour@gov.in",
+      "phone": "9876543216",
+      "password_hash": "$2a$10$Aa5WgvQaZZ0pnbHKrziqSuYO5DJ15PuLQzUraBJ5H9Ia6yKq8E4Iu",
+      "role": "officer",
+      "department_id": 5,
+      "created_at": "2026-09-10T17:51:46.270Z"
+    }
+  ],
+  "business_profiles": [
+    {
+      "id": 1,
+      "user_id": 4,
+      "company_name": "Apex Agro Foods & Beverages Ltd",
+      "sector": "Food Processing",
+      "location": "MIDC Phase-II, Plot 42, Pune Industrial Corridor",
+      "investment": 8500000,
+      "project_size": "22,000 sq ft",
+      "employees": 45,
+      "production_capacity": "120 MT/month",
+      "land_type": "Industrial Park",
+      "environmental_category": "Orange",
+      "business_stage": "Pre-Construction",
+      "pan_gstin": "27AABCA9876K1Z9",
+      "created_at": "2026-09-10T17:03:48.491Z",
+      "updated_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 2,
+      "user_id": 5,
+      "company_name": "Apex Agro Foods & Beverages Ltd",
+      "sector": "Food Processing",
+      "location": "MIDC Phase-II, Plot 42, Pune Industrial Corridor",
+      "investment": 100000,
+      "project_size": "22,000 sq ft",
+      "employees": 3,
+      "production_capacity": "1 MT/month",
+      "land_type": "Private Freehold",
+      "environmental_category": "White",
+      "business_stage": "Pre-Construction",
+      "pan_gstin": "",
+      "created_at": "2026-09-10T17:25:43.770Z",
+      "updated_at": "2026-09-10T19:14:56.129Z"
+    }
+  ],
+  "approval_types": [
+    {
+      "id": 1,
+      "name": "Incorporation & MSME Udyam Registration",
+      "department_id": 2,
+      "description": "Primary registration enabling single-window state benefits.",
+      "risk_level": "Low",
+      "processing_days": 3,
+      "fee": 500,
+      "requires_inspection": 0,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 2,
+      "name": "Consent to Establish (CTE) - Pollution NOC",
+      "department_id": 1,
+      "description": "Mandatory environmental clearance prior to construction.",
+      "risk_level": "High",
+      "processing_days": 21,
+      "fee": 5000,
+      "requires_inspection": 1,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 3,
+      "name": "Fire Safety Preliminary NOC",
+      "department_id": 3,
+      "description": "Fire safety approval of site plans and evacuation design.",
+      "risk_level": "Medium",
+      "processing_days": 14,
+      "fee": 3500,
+      "requires_inspection": 1,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 4,
+      "name": "Factory Building Plan Approval",
+      "department_id": 5,
+      "description": "Approval of factory structural layout, safety and ventilation.",
+      "risk_level": "Medium",
+      "processing_days": 15,
+      "fee": 4000,
+      "requires_inspection": 0,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 5,
+      "name": "Consent to Operate (CTO) - Industrial Emissions",
+      "department_id": 1,
+      "description": "Operating permission following factory construction.",
+      "risk_level": "High",
+      "processing_days": 21,
+      "fee": 6000,
+      "requires_inspection": 1,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 6,
+      "name": "FSSAI Food Manufacturing Licence",
+      "department_id": 4,
+      "description": "Standard compliance for manufacturing and packaging food.",
+      "risk_level": "Medium",
+      "processing_days": 14,
+      "fee": 7500,
+      "requires_inspection": 1,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 7,
+      "name": "Factory Licence & Labour Registration",
+      "department_id": 5,
+      "description": "Operational labour welfare registration for 10+ employees.",
+      "risk_level": "Low",
+      "processing_days": 10,
+      "fee": 3000,
+      "requires_inspection": 0,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    }
+  ],
+  "approval_rules": [
+    {
+      "id": 1,
+      "approval_type_id": 1,
+      "condition_field": "investment",
+      "condition_operator": ">=",
+      "condition_value": "0"
+    },
+    {
+      "id": 2,
+      "approval_type_id": 2,
+      "condition_field": "environmental_category",
+      "condition_operator": "IN",
+      "condition_value": "Red,Orange"
+    },
+    {
+      "id": 3,
+      "approval_type_id": 3,
+      "condition_field": "investment",
+      "condition_operator": ">=",
+      "condition_value": "2500000"
+    },
+    {
+      "id": 4,
+      "approval_type_id": 4,
+      "condition_field": "business_stage",
+      "condition_operator": "IN",
+      "condition_value": "Planning,Pre-Construction,Under Construction"
+    },
+    {
+      "id": 5,
+      "approval_type_id": 5,
+      "condition_field": "environmental_category",
+      "condition_operator": "IN",
+      "condition_value": "Red,Orange"
+    },
+    {
+      "id": 6,
+      "approval_type_id": 6,
+      "condition_field": "sector",
+      "condition_operator": "=",
+      "condition_value": "Food Processing"
+    },
+    {
+      "id": 7,
+      "approval_type_id": 7,
+      "condition_field": "employees",
+      "condition_operator": ">=",
+      "condition_value": "10"
+    }
+  ],
+  "approval_dependencies": [
+    {
+      "id": 1,
+      "approval_type_id": 2,
+      "depends_on_approval_type_id": 1
+    },
+    {
+      "id": 2,
+      "approval_type_id": 3,
+      "depends_on_approval_type_id": 1
+    },
+    {
+      "id": 3,
+      "approval_type_id": 4,
+      "depends_on_approval_type_id": 2
+    },
+    {
+      "id": 4,
+      "approval_type_id": 4,
+      "depends_on_approval_type_id": 3
+    },
+    {
+      "id": 5,
+      "approval_type_id": 5,
+      "depends_on_approval_type_id": 4
+    },
+    {
+      "id": 6,
+      "approval_type_id": 6,
+      "depends_on_approval_type_id": 5
+    },
+    {
+      "id": 7,
+      "approval_type_id": 7,
+      "depends_on_approval_type_id": 5
+    }
+  ],
+  "document_requirements": [
+    {
+      "id": 1,
+      "approval_type_id": 1,
+      "document_name": "PAN Card / Aadhaar",
+      "description": "Government issued identification of director/proprietor",
+      "is_mandatory": 1
+    },
+    {
+      "id": 2,
+      "approval_type_id": 1,
+      "document_name": "Bank Cancelled Cheque",
+      "description": "Official bank account verification for subsidies",
+      "is_mandatory": 1
+    },
+    {
+      "id": 3,
+      "approval_type_id": 2,
+      "document_name": "Site Layout & Elevation Blueprint",
+      "description": "Architectural plot drawing with emission stacks marked",
+      "is_mandatory": 1
+    },
+    {
+      "id": 4,
+      "approval_type_id": 2,
+      "document_name": "Pollution Control Equipment Specs",
+      "description": "Effluent treatment plant (ETP) / scrubber schematics",
+      "is_mandatory": 1
+    },
+    {
+      "id": 5,
+      "approval_type_id": 2,
+      "document_name": "Land Conversion / Possession Order",
+      "description": "Evidence of industrial land allotment or converted freehold",
+      "is_mandatory": 1
+    },
+    {
+      "id": 6,
+      "approval_type_id": 3,
+      "document_name": "Fire Hydrant & Piping Schematic",
+      "description": "Layout of active fire suppression and sprinkler lines",
+      "is_mandatory": 1
+    },
+    {
+      "id": 7,
+      "approval_type_id": 3,
+      "document_name": "Emergency Evacuation & Route Plan",
+      "description": "Emergency exits, assembly points, and staircase widths",
+      "is_mandatory": 1
+    },
+    {
+      "id": 8,
+      "approval_type_id": 4,
+      "document_name": "Structural Stability Certificate",
+      "description": "Certified by accredited civil/structural engineer",
+      "is_mandatory": 1
+    },
+    {
+      "id": 9,
+      "approval_type_id": 5,
+      "document_name": "Installation Compliance Report",
+      "description": "Proof that ETP/STP has been erected as per CTE plan",
+      "is_mandatory": 1
+    },
+    {
+      "id": 10,
+      "approval_type_id": 6,
+      "document_name": "Water Potability Testing Report",
+      "description": "NABL accredited laboratory report of water quality",
+      "is_mandatory": 1
+    },
+    {
+      "id": 11,
+      "approval_type_id": 6,
+      "document_name": "Food Safety Management System (FSMS) Plan",
+      "description": "HACCP/FSMS workflow plan with hazard analysis",
+      "is_mandatory": 1
+    },
+    {
+      "id": 12,
+      "approval_type_id": 7,
+      "document_name": "Worker List & Welfare Facilities Plan",
+      "description": "List of workforce with first-aid, crèche & canteen provisions",
+      "is_mandatory": 1
+    }
+  ],
+  "applications": [
+    {
+      "id": 1,
+      "application_number": "APP-2026-00101",
+      "business_profile_id": 1,
+      "approval_type_id": 1,
+      "status": "Approved",
+      "assigned_officer_id": 2,
+      "submitted_at": "2026-08-21T17:03:48.492Z",
+      "decision_date": "2026-08-26T17:03:48.492Z",
+      "reference_number": "REG-UDYAM-99812",
+      "risk_score": 25,
+      "notes": "Direct approval without inspection"
+    },
+    {
+      "id": 2,
+      "application_number": "APP-2026-00102",
+      "business_profile_id": 1,
+      "approval_type_id": 2,
+      "status": "Under Review",
+      "assigned_officer_id": 2,
+      "submitted_at": "2026-09-06T17:03:48.492Z",
+      "decision_date": null,
+      "reference_number": "CTE-PCB-2026-441",
+      "risk_score": 72,
+      "notes": "High risk - requires strict verification"
+    },
+    {
+      "id": 3,
+      "application_number": "APP-2026-00103",
+      "business_profile_id": 1,
+      "approval_type_id": 3,
+      "status": "Inspection Scheduled",
+      "assigned_officer_id": 3,
+      "submitted_at": "2026-09-03T17:03:48.492Z",
+      "decision_date": null,
+      "reference_number": "FIRE-NOC-2026-108",
+      "risk_score": 60,
+      "notes": "Site visit booked"
+    },
+    {
+      "id": 4,
+      "application_number": "APP-2026-96148",
+      "business_profile_id": 2,
+      "approval_type_id": 1,
+      "status": "Submitted",
+      "assigned_officer_id": null,
+      "submitted_at": "2026-09-10T17:27:04.526Z",
+      "decision_date": null,
+      "reference_number": null,
+      "risk_score": 20,
+      "notes": "Application for Incorporation & MSME Udyam Registration initiated."
+    }
+  ],
+  "application_documents": [
+    {
+      "id": 1,
+      "application_id": 1,
+      "document_requirement_id": 1,
+      "file_name": "Director_PAN_Vikram.pdf",
+      "file_path": "/uploads/demo_pan.pdf",
+      "file_size": 204800,
+      "uploaded_at": "2026-09-10T17:03:48.491Z",
+      "validation_status": "Valid",
+      "validation_notes": "AI Verification: Verified identity match with MCA registration."
+    },
+    {
+      "id": 2,
+      "application_id": 2,
+      "document_requirement_id": 3,
+      "file_name": "Apex_Site_Layout_v1.pdf",
+      "file_path": "/uploads/demo_site_layout.pdf",
+      "file_size": 1048576,
+      "uploaded_at": "2026-09-10T17:03:48.491Z",
+      "validation_status": "Valid",
+      "validation_notes": "AI Verification: Scaled architectural plan contains mandatory North pointer and 6m peripheral setback."
+    },
+    {
+      "id": 3,
+      "application_id": 2,
+      "document_requirement_id": 4,
+      "file_name": "ETP_Scrubber_Specs.pdf",
+      "file_path": "/uploads/demo_etp.pdf",
+      "file_size": 524288,
+      "uploaded_at": "2026-09-10T17:03:48.491Z",
+      "validation_status": "Valid",
+      "validation_notes": "AI Verification: Zero liquid discharge (ZLD) specs documented."
+    },
+    {
+      "id": 4,
+      "application_id": 3,
+      "document_requirement_id": 6,
+      "file_name": "Fire_Hydrant_Schematic.pdf",
+      "file_path": "/uploads/demo_fire.pdf",
+      "file_size": 819200,
+      "uploaded_at": "2026-09-10T17:03:48.491Z",
+      "validation_status": "Valid",
+      "validation_notes": "AI Verification: Dual booster pump specifications detected."
+    },
+    {
+      "id": 5,
+      "application_id": 4,
+      "document_requirement_id": 1,
+      "file_name": "CODE CRAFTERS.pdf",
+      "file_path": "/uploads/document-1789061257747-488341622.pdf",
+      "file_size": 700167,
+      "uploaded_at": "2026-09-10T17:27:37.966Z",
+      "validation_status": "Valid",
+      "validation_notes": "AI Verification Passed: Document format verified, legible scan quality confirmed, and mandatory regulatory attributes detected."
+    },
+    {
+      "id": 6,
+      "application_id": 4,
+      "document_requirement_id": 2,
+      "file_name": "CODE CRAFTERS.pdf",
+      "file_path": "/uploads/document-1789061283743-584318413.pdf",
+      "file_size": 700167,
+      "uploaded_at": "2026-09-10T17:28:03.979Z",
+      "validation_status": "Valid",
+      "validation_notes": "AI Verification Passed: Document format verified, legible scan quality confirmed, and mandatory regulatory attributes detected."
+    }
+  ],
+  "application_comments": [
+    {
+      "id": 1,
+      "application_id": 2,
+      "officer_id": 2,
+      "comment": "Application received and scrutinized. Site drawing verified.",
+      "action_type": "Scrutiny Note",
+      "created_at": "2026-09-10T17:03:48.491Z"
+    }
+  ],
+  "inspections": [
+    {
+      "id": 1,
+      "application_id": 3,
+      "scheduled_date": "2026-09-12",
+      "inspector_id": 3,
+      "status": "Scheduled",
+      "report_notes": "Physical site verification of fire safety booster pump foundation and egress routes.",
+      "inspection_score": null,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    }
+  ],
+  "licences": [
+    {
+      "id": 1,
+      "application_id": 1,
+      "licence_number": "MSME-MH-2026-00892",
+      "issue_date": "2026-08-26",
+      "expiry_date": "2027-08-26",
+      "renewal_status": "Active",
+      "qr_code_hash": "SHA256:8f4c8b321a99812",
+      "created_at": "2026-09-10T17:03:48.491Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "user_id": 4,
+      "message": "Your MSME Udyam Registration has been approved. Digital Certificate generated.",
+      "type": "success",
+      "is_read": false,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 2,
+      "user_id": 4,
+      "message": "Inspection scheduled for Fire Safety NOC on 2026-09-12",
+      "type": "info",
+      "is_read": false,
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 3,
+      "user_id": 5,
+      "message": "Your application for \"Incorporation & MSME Udyam Registration\" has been submitted successfully (APP-2026-96148).",
+      "type": "info",
+      "is_read": true,
+      "created_at": "2026-09-10T17:27:04.526Z"
+    }
+  ],
+  "grievances": [
+    {
+      "id": 1,
+      "application_id": 2,
+      "user_id": 4,
+      "subject": "Clarification on CTE Effluent Sampling Schedule",
+      "description": "We submitted the ETP design 4 days ago. Inquiring if an officer visit is required before CTE or only during CTO stage.",
+      "status": "Under Investigation",
+      "resolution_note": null,
+      "created_at": "2026-09-10T17:03:48.491Z",
+      "resolved_at": null
+    }
+  ],
+  "schemes": [
+    {
+      "id": 1,
+      "name": "Pradhan Mantri Kisan SAMPADA Agro Scheme",
+      "department_id": 2,
+      "description": "Mega food parks and integrated cold chain infrastructure capital grant.",
+      "sector": "Food Processing",
+      "eligibility_criteria": "Investment in plant & machinery >= ₹50 Lakhs in food processing or cold storage.",
+      "benefit_summary": "Up to 35% capital subsidy (max ₹5 Crore) on plant machinery.",
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 2,
+      "name": "State Green Technology & Pollution Abatement Incentive",
+      "department_id": 1,
+      "description": "Subsidies for zero-liquid discharge effluent treatment plants and solar rooftops.",
+      "sector": "All",
+      "eligibility_criteria": "Industries classified as Orange or Red investing in advanced recycling.",
+      "benefit_summary": "25% reimbursement on ETP/CETP capital investment up to ₹25 Lakhs.",
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 3,
+      "name": "MSME Interest Subvention & Credit Linked Capital Subsidy",
+      "department_id": 2,
+      "description": "Low interest working capital and term loans for manufacturing technology upgradation.",
+      "sector": "Manufacturing",
+      "eligibility_criteria": "Registered MSMEs with valid Udyam certificate and positive net worth.",
+      "benefit_summary": "2% interest subsidy on fresh term loans up to 3 years.",
+      "created_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 4,
+      "name": "Women & Scheduled Entrepreneurs Industrial Assistance",
+      "department_id": 2,
+      "description": "Special seed funding, stamp duty exemption, and electricity duty rebate.",
+      "sector": "All",
+      "eligibility_criteria": "51%+ equity held by women or reserved category entrepreneurs.",
+      "benefit_summary": "100% stamp duty waiver and ₹1.50/unit power tariff subsidy for 5 years.",
+      "created_at": "2026-09-10T17:03:48.491Z"
+    }
+  ],
+  "audit_log": [
+    {
+      "id": 1,
+      "application_id": 1,
+      "from_status": "Submitted",
+      "to_status": "Under Review",
+      "changed_by": 2,
+      "duration_hours": 24.5,
+      "changed_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 2,
+      "application_id": 1,
+      "from_status": "Under Review",
+      "to_status": "Approved",
+      "changed_by": 2,
+      "duration_hours": 48,
+      "changed_at": "2026-09-10T17:03:48.491Z"
+    },
+    {
+      "id": 3,
+      "application_id": 4,
+      "from_status": "Draft",
+      "to_status": "Submitted",
+      "changed_by": 5,
+      "duration_hours": 0,
+      "changed_at": "2026-09-10T17:27:04.526Z"
+    }
+  ]
+}
